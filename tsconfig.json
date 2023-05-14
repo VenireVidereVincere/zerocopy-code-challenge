@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "module": "es2022",
+      "target": "es2017",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "jsx": "react",
+      "sourceMap": true,
+      "outDir": "./dist",
+      "strict": true,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "allowJs": true,
+    }
+  }

@@ -1,0 +1,15 @@
+.textbox {
+    height: 44px; /* Twice the default height */
+    max-width: 100%; 
+    width: 85%;
+    border: 1px solid rgb(219, 219, 219); /* Grey border */
+    border-radius: 5px; /* Rounded corners */
+    outline: none; /* Remove default outline */
+    padding: 0.5rem; /* Add some padding for better spacing */
+    
+    /* Additional styles for desktop screens */
+    @media (min-width: 768px) {
+      width: 200%; /* Twice the default width on desktop */
+    
+    }
+  }

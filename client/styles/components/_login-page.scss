@@ -1,0 +1,45 @@
+.login-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .label-align {
+    display: flex;
+    align-items: flex-start; /* Update to align-items: flex-start */
+  }
+  
+  .label-align label {
+    margin-bottom: 0.5rem; /* Adjust the margin as needed */
+    padding-left: 10%;
+
+    @media (min-width: 768px) {
+     padding-left:0%; /* Twice the default width on desktop */
+    
+    }
+
+  }
+
+  .textbox-container {
+    padding-bottom: 1rem
+  }
+
+  .responsive-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .logo-container {
+    max-width: 350px; /* Adjust the max width as needed for PC screens */
+    margin: 0 auto; /* Center the logo horizontally */
+  
+    /* Media query for mobile screens */
+    @media (max-width: 767px) {
+      max-width: 200px; /* Adjust the max width as needed for mobile screens */
+    }
+  
+  }
+
+  .login-button {
+    width: 75%;
+  }

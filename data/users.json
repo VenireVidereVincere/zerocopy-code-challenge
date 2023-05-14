@@ -1,19 +1,16 @@
 {
-  "users": 
-  [
+  "users": [
     {
       "_id": "5410953eb0e0c0ae25608277",
       "guid": "eab0324c-75ef-49a1-9c49-be2d68f50b96",
       "isActive": true,
       "balance": "$3,585.69",
       "picture": "http://placehold.it/32x32",
-      "age": 30,
       "eyeColor": "blue",
       "name": {
-        "first": "Henderson",
+        "first": "Hendersonsss",
         "last": "Briggs"
       },
-      "company": "GEEKNET",
       "email": "henderson.briggs@geeknet.net",
       "password": "23derd*334",
       "phone": "+1 (936) 451-3590",
@@ -29,7 +26,7 @@
       "eyeColor": "brown",
       "name": {
         "first": "Boyd",
-        "last": "Small"
+        "last": "Sfsdfasd"
       },
       "company": "ENDIPINE",
       "email": "boyd.small@endipine.biz",
@@ -74,22 +71,30 @@
       "address": "110 Roosevelt Place, Salunga, South Carolina, 9434"
     },
     {
-      "_id": "5410953e099f716e02f32e05",
-      "guid": "584de54b-fa74-480d-90a4-b1b38cd02685",
-      "isActive": true,
-      "balance": "$1,778.30",
-      "picture": "http://placehold.it/32x32",
-      "age": 23,
-      "eyeColor": "green",
+      "_id": "1",
+      "guid": "1",
       "name": {
-        "first": "Ruby",
-        "last": "Glenn"
+        "first": "test",
+        "last": "lastTest"
       },
-      "company": "WATERBABY",
-      "email": "ruby.glenn@waterbaby.co.uk",
-      "password": "red^adl4",
-      "phone": "+1 (800) 433-3997",
-      "address": "622 Fanchon Place, Kohatk, Marshall Islands, 8665"
+      "isActive": true,
+      "balance": "$0",
+      "picture": "",
+      "age": 99,
+      "eyeColor": "none",
+      "company": "none",
+      "email": "test@test.com",
+      "password": "test!123"
+    }
+  ],
+  "tokens": [
+    {
+      "_id": "1",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwiaWF0IjoxNjgzOTM1NzEyfQ.kJByjpPYKW80-E28zivHavULLFZOmUH8Db79VnE4biM"
+    },
+    {
+      "_id": "5410953eb0e0c0ae25608277",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1NDEwOTUzZWIwZTBjMGFlMjU2MDgyNzciLCJpYXQiOjE2ODM5NDM5NzZ9.afD7SofSsYK4SZ75D3KdkVXDUa5KDS_t5_cVVQn-c6s"
     }
   ]
 }
