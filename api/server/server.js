@@ -13,7 +13,7 @@ import dotenv from 'dotenv';
 dotenv.config()
 const secretKey = process.env.SECRET_KEY;
 const app = express();
-const allowlist = ['http://localhost:9000'];
+const allowlist = ['http://localhost:3000','http://localhost:3001'];
 const corsOptionsDelegate = function (req, callback) {
   let corsOptions;
   if (allowlist.indexOf(req.header('Origin')) !== -1) {
@@ -37,6 +37,7 @@ const adapter = new JSONFile(dbFilePath)
 const defaultData = { users: [] }
 const db = new Low(adapter,defaultData)
 
+app.use(express.static(path.join(distPath, 'dist', 'src', 'public', 'assets')));
 
 await db.read()
 
@@ -183,11 +184,14 @@ app.post('/logout', authenticate, (req, res) => {
     }
   });
 
-  app.get("*", (req, res) => {
-    res
-      .status(200)
-      .sendFile(path.join(distPath,"index.html"))
+  app.get("/bundle.js", (req, res) => {
+    res.status(200).sendFile(path.join(distPath, "bundle.js"));
   });
+
+  app.get("*", (req, res) => {
+    res.status(200).sendFile(path.join(distPath, "index.html"));
+  });
+
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

@@ -61,7 +61,7 @@ module.exports = {
     }),
     new NodePolyfillPlugin(), 
   ],
-  mode: 'development',
+  mode: 'production',
   devServer: {
     static: {
       directory: path.resolve(__dirname, 'dist'),
